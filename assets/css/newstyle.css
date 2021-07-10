@@ -1,0 +1,318 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clear{
+    clear: both;
+}
+#header{
+    top: 0;
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    position: fixed;
+    z-index: 1;
+}
+#header .title{
+    position: absolute;
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 18px;
+}
+#header .title a{
+    text-decoration: none;
+    color: #000;
+}
+#header .title:hover{
+    background-color: #ccc;
+}
+/*horizontal*/
+#horizontal{
+    height: 46px;
+    display: inline-block;
+    float: right;
+    clear: right;
+    margin-right: auto;
+}
+#horizontal ul{
+    display: inline-block;
+    height: 46px;
+}
+#horizontal > ul > li{
+    list-style-type: none;
+    display: inline-block;
+   
+}
+#horizontal li{
+    position: relative;
+    text-transform: uppercase;
+}
+#horizontal  li a{
+    margin: 0 10px;
+    line-height: 46px;
+    padding: 0 24px ;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+   
+}
+#horizontal >ul>li:hover > a{
+    background-color: #ccc;
+    color: #000;
+    
+}
+/*sub nav*/
+#horizontal li:hover .subnav{
+    display: block;
+}
+#horizontal .subnav{
+    display: none;
+    min-width: 190px;
+    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 120px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    animation: fadeIn ease .2s;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#horizontal .subnav li:hover{
+    background-color: #ccc;
+}
+#horizontal .subnav li{
+    list-style-type: none;
+    line-height: 40px;
+    width: 100%;
+}
+#horizontal .subnav li a{
+    font-size: 13px;
+    padding: 0px 0px 0px 10px;
+    margin-right: auto;
+    line-height: 40px;
+    text-align: left;
+}
+#horizontal .subnav-tour{
+    display: none;
+    min-width: 182px;
+    margin-left: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    border-radius: 2%;
+    animation: fadeIn ease .2s;
+    
+}
+#horizontal .subnav-tour li{
+    width: 100%;
+    line-height: 40px;
+    list-style-type: none;
+}
+#horizontal .subnav-tour li a{
+    font-size: 13px;
+    line-height: 40px;
+    margin-right: auto;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+#horizontal .subnav-tour li:hover{
+    background-color: #ccc;
+}
+#horizontal li:hover .subnav-tour{
+    display: block;
+}
+
+#main{
+    width: 100%;
+}
+#container{
+    position: relative;
+}
+#vertical{
+    position: sticky;
+    top: 20%;
+    width: 17%;
+    float: left;
+    margin-top: 100px;
+    padding-bottom: 100%;
+
+}
+#vertical ul li{
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#vertical ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+#vertical ul li:hover a{
+    background-color: #ccc;
+    font-size: 17px;
+}
+/*slider*/
+#slider{
+    position: relative;
+   padding-top: 35%;
+   margin-top: 46px;
+   background: url('../img/longan.jpg') center top/cover no-repeat;
+}
+#slider .text-heading{
+    position: absolute;
+    text-align: center;
+    bottom: 440px;
+    line-height: 1.4;
+    color: white;
+    font-size: 23px;
+    text-shadow: 0 0 1px #000;
+    width: 100%;
+    letter-spacing: 3px;
+}
+#content{
+    float: left;
+    width: 83%;
+}
+
+#content .content-list{
+    margin-left: 20px;
+}
+#content .img-list{
+    width: 100%;
+}
+
+#content .img-list .img-content{
+   width: 100%;
+}
+#content .img-list .img-content img{
+    width: 33.3333333%;
+    height: 250px;
+    float: left;
+    object-fit: cover;
+    padding: 0 15px 10px 15px;
+}
+.content-list h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+   
+}
+.content-list p{
+    margin-top: 15px;
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 1.6;
+    text-indent: 40px;
+}
+
+#page{
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+}
+#page ul{
+    width: 100%;
+    height: 40px;
+}
+#page ul li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+#page ul li a,#page ul li i{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+}
+#page ul li:hover{
+     background-color: #ccc;
+   
+}
+/*icon*/
+.icon-btn{
+    font-size: 12px;
+    color: black;
+}
+/*contact*/
+#contact{
+    text-align: center;
+    clear: both;
+    font-size: 17px;
+}
+#contact h2{
+    padding: 38px 0px 20px 0px;
+    letter-spacing: 3px;
+    font-size: 33px;
+}
+#contact .contact-info{
+   line-height: 32px;
+}
+
+#contact .contact-info .email-form{
+    margin-left: 7.4em;
+}
+#contact .contact-content .form-send{
+    height: 80px;
+}
+#contact .contact-content{
+    width: 500px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact .form-control{
+    line-height: 58px;
+    width: 35em;
+}
+#contact .submit-info{
+    height: 35px;
+    width: 70px;
+    margin-top: 15px;
+}
+#contact .send{
+    height: 35px;
+    min-width: 120px;
+}
+#contact .send:hover{
+    background-color: #ccc;
+}
+#contact .email-form{
+    padding-bottom: 17px;
+}
+#footer{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #ddd;
+}
